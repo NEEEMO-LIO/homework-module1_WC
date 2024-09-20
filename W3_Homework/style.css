@@ -35,11 +35,11 @@
 }
 #timeofday{
     text-align: center;
-    padding-top: 10px;
-    margin-top: 260px;
+    padding-top: 20px;
+    margin-top: 250px;
     height:40px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     color: #3a3a3a;
     background: linear-gradient(0deg, rgba(251,215,139,1) 0%, rgba(118,213,245,1) 100%);
 }

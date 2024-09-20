@@ -107,10 +107,11 @@
             var min = d.getMinutes();
             var sec = d.getSeconds();
             var ampm;
-            // var utchr = d.getUTCHours();
-            // var timeDiff;
-            // var adjTimeDiff;
-            // var timeZone;
+
+            var utchr = d.getUTCHours();
+            var timeDiff;
+            var adjTimeDiff;
+            var timeZone;
 
             if(sec<10){
                 sec = "0" + sec;
@@ -118,7 +119,8 @@
             if(min<10){
                 min = "0" + min;
             }
-            
+           
+
             if(hr == 12){
                 ampm = "PM";
             }else if(hr>12){
@@ -128,7 +130,11 @@
                 ampm = "AM";
             }
 
-            var time = hr + ":" + min + ":" + sec + " " + ampm;
+             if(hr<10){
+                hr = "0"+hr;
+            }
+
+            var time = hr + ":" + min + ":" + sec + " " + ampm + " " + timeZone;
             document.getElementById("clock").innerText = time;
         }
      
