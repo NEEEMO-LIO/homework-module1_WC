@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="contact">
+<body id="contact" onLoad="disableButton(true)">
 <div class="container">
 
     <header>
@@ -90,12 +90,12 @@
 
             <!--Random Codes-->
             <div class="randomcode">
-                <input type="text" name="randomcode" placeholder="Enter Characters">
+                <input type="text" name="randomcode" id="codeentered" placeholder="Enter Characters">
                 <p id="codes"></p>
             </div>
 
             <div class="button">
-                <input type="submit" value="Inquire">
+                <input type="submit" id="submit" value="Inquire">
             </div> 
         </fieldset>
     </form>

@@ -282,8 +282,14 @@ select{
     text-align: center;
 }
 textarea{
-    width:97%;
+    width:80%;
     height: 200px;
+}
+
+div.randomcode, div.button {
+    display: flex;
+    justify-content: flex-end; /* go to right */
+    width:80%;
 }
 
 input[type="submit"]{
@@ -298,6 +304,21 @@ input[type="submit"]{
     font-weight: bold;
     font-size: 15px;
     color:#fff;
+}
+
+.randomcode input {
+    width:20em;
+    margin-top: 30px;
+    margin-right:30px;
+    height:30px;
+}
+
+.randomcode [id="codes"]{
+    background-color: #c2c2c2;
+    height: 40px;
+    padding-top:20px;
+    text-align: center;
+    width: 7em;
 }
 
 /*cliffs*/
