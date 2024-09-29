@@ -61,16 +61,24 @@
             <div class="textbox">
                 <label>Name:</label>
                     <input type="text" name="name" placeholder="John Doe">
-                <label>Email:</label>
-                    <input type="email" name="email" placeholder="johndoe@gmail.com">
-                <label>Phone:</label>
-                    <input type="text" name="phone" placeholder="xxx-xxx-xxxx">
             </div>
 
             <div class="radios">
                 <label> How should we contact you?</label>
-                    <input type="radio" name="contact" value="email" checked>Email 
-                    <input type="radio" name="contact" value="phone"/>Phone
+                <select id="contactMethod">
+                    <option value="">--Select--</option>
+                    <option value="1">Email</option>
+                    <option value="2">Phone</option>
+                </select>
+               
+                <div id="enterEm" style="display: none;">
+                    <label>Enter your email</label>
+                    <input type="email" name="email" placeholder="johndoe@gmail.com">
+                </div>
+                <div id="enterPh" style="display: none;">
+                    <label>Enter your phone</label>
+                    <input type="num" name="phone" placeholder="xxx-xxx-xxxx">
+                </div>
             </div>
 
            <div class="selectmenu">
@@ -154,6 +162,9 @@
 
     <!--Verication Codes-->
     <script src="js/randomcodes.js"></script>
+
+    <!--Dropdown Em/Ph-->
+    <script src="js/dropdown_EmPh.js"></script>
 
 </body>
 

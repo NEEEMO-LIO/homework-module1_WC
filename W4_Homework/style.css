@@ -266,9 +266,16 @@ label{
     display:grid;
 }
 
-input[type="text"],
-input[type="email"]{
+input[type="text"]{
     width:50%;
+    margin-top: 5px;
+}
+
+input[type="email"],input[type="num"]{
+    display: block;
+    width:15%;
+    margin-top: -15px;
+    margin-bottom: 10px;
 }
 
 .radios{
@@ -277,10 +284,15 @@ input[type="email"]{
 }
 
 select{
-    width: 180px;
-    height:30px;
-    text-align: center;
+    width: 120px;
+    text-align: left;
+    margin-left: 5px;
 }
+
+.selectmenu{
+    margin-top: 30px;
+}
+
 textarea{
     width:80%;
     height: 200px;
@@ -289,7 +301,7 @@ textarea{
 div.randomcode, div.button {
     display: flex;
     justify-content: flex-end; /* go to right */
-    width:80%;
+    width:81%;
 }
 
 input[type="submit"]{
