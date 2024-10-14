@@ -1,0 +1,425 @@
+ /*header*/
+ header{
+    width:100%;
+    min-height:450px;
+    padding-top: 3em;
+}
+#home header{
+    background:no-repeat lightgray url(images/cliff_ocean.jpg);
+    background-size: 1700px;
+}
+#activities header{
+    background:no-repeat lightgray url(images/runfly.jpg);
+    background-size: 1700px;
+}
+#contact header{
+    background:no-repeat lightgray url(images/cliff_rock.jpg);
+    background-size: 1700px;
+}
+#cliffs header{
+    background:no-repeat lightgray url(images/forest_cliff.jpg);
+    background-size: 1700px;
+}
+.main-header{
+    background-color: rgb(255,255,255,0.8);
+    width:694px;
+    margin:2em auto 0 auto;
+    min-height: 100px;
+    height:100px
+}
+.main-header .logo img{
+    width:100px;
+    height: 100px;
+    margin: 0 2em 0 0;
+    float:left;
+}
+#timeofday{
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 255px;
+    height:35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #3a3a3a;
+    background: linear-gradient(0deg, rgba(251,215,139,1) 0%, rgba(118,213,245,1) 100%);
+}
+#clock{
+    color:#125688;
+}
+
+
+/*navigation*/
+.main-menu{
+    margin-left:210px;
+    font-weight:400;
+}
+.main-menu ul li{
+    list-style-type:none; 
+    display:inline-block; 
+    float:left;      /* VScode mark this float as an error, no idea */
+    padding-left: 28px;
+    padding-right: 25px;
+    padding-top: 40px;
+    border-left: 1px solid rgba(202,204,202,0.6);
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 60px;
+}
+
+.main-menu ul li:hover{
+    background: #9ed034;
+}
+.main-menu ul li a{
+    text-decoration:none; 
+    color:#888; 
+}
+.main-menu ul li a:visited{
+    text-decoration:none; 
+    color:#888;
+}
+.main-menu ul li.active{   /*everything looks fine, but I dont know why this is not working*/
+    background:#9ed034;
+    border:none;
+}
+.main-menu ul li.active a{
+    color:#fff;
+}
+
+/*home_main*/
+main{
+    font-family: Arial, Helvetica, sans-serif;
+}
+main h2{
+     color: #9ed034;
+}
+main .text{
+    padding-left: 60px;
+    padding-right:60px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+/*home_main partners*/
+section{
+    width:100%;
+    background-color: #4288C3;
+}
+
+#partners {
+    display: flex;                
+    justify-content: center;      
+    list-style: none;            
+    padding-top: 80px;                  
+    height:180px;
+    margin-bottom: 0px;
+}
+#partners li {
+    margin-left: 20px;              
+    margin-right: 20px;
+}
+#partners img {
+    max-width: 100px;            
+    height: auto;                 
+    border-radius:50%;
+}
+
+/* section #partners{
+    width:100%;
+    padding: 2em 0 2em 0;
+    margin: 0 auto;
+    text-align: center;
+}
+    
+section #partners .partner{
+    display: inline-block;
+    margin: 0 0.75em;
+    padding: 1.3em 1.5em;
+    background-color: #fff;
+    
+}
+section #partners img{
+    width:90px;
+    
+} */
+
+/*footer*/
+footer{
+    width:100%;
+    height:155px;
+    padding-bottom:1em;
+    background-color:#ecfab8;
+}
+footer #nondisclaimer .copy{
+    padding: 3.5em 3.5em 3.5em 13em;
+    float:left;
+    font-size: 0.9em;
+}
+footer #nondisclaimer .social{
+    padding:2.5em;
+    margin-right: 9.25em;
+    float:right;
+}
+footer #disclaimer{
+    clear:both;
+}
+footer #disclaimer p{
+    font-size: 0.85em;
+    text-align: center;
+}
+footer #nondisclaimer .social .fa{
+    padding:15px;
+    font-size:15px;
+    width:15px;
+    text-align:center;
+    text-decoration: none;
+    margin:0 4px;
+    border-radius: 50%;
+}
+footer #nondisclaimer .social .fa:hover{
+    opacity:0.7;
+}
+footer #nondisclaimer .social .fa-facebook{
+    background: #3B5998;
+    color:#fff;
+}
+footer #nondisclaimer .social .fa-twitter{
+    background: #55ACEE;
+    color:#fff;
+}
+footer #nondisclaimer .social .fa-instagram{
+    background: #125688;
+    color:#fff;
+}
+
+/*activities_main_table*/
+#activ_table table {
+    width: 1000px;
+    margin: 4em auto;
+}
+
+#activ_table caption {
+    background: #852B1B;
+    height: 40px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 1em; 
+}
+
+#activ_table thead {
+    background: #BDE1FF; 
+}
+
+#activ_table tbody {
+    background: #EEFFE6;
+    text-align: center;
+    border: 2px solid #852B1B;
+}
+
+#activ_table th, td {
+    width: 225px;
+    height: 75px;
+    vertical-align: middle;
+    border: 2px solid #852B1B; /* Each cell has its own border */
+}
+
+#activ_table th:first-child {
+    width: 125px;
+    background: #4977D1;
+    color: #fff;
+}
+
+#activ_table td:first-child {
+    font-weight: bold;
+    background: #BDE1FF;
+}
+
+#activ_table tr{
+    border: 2px solid #852B1B;
+}
+
+#activ_table td{
+    border: 2px solid #852B1B;
+}
+
+.highlight {
+    background-color: #9ed034; /* Highlight color */
+    font-weight: bold;
+    color:white;
+    font-size: 16px;
+}
+
+#activities main #displaySelected{
+    visibility: hidden;
+    margin: 0 auto;
+    width: 600px;
+    border: 2px solid  #9ed034;
+    padding:0.75em;
+}
+
+#activities main #displaySelected #result, #activities main #displaySelected #sendinfo{
+    display:inline-block;
+    margin:0;
+}
+
+#activities main #result{
+    min-height: 50px;
+    width: 300px;
+    padding:0;
+}
+
+#activities main #result h4{
+    margin-bottom: 1em;
+    font-size:1.15em;
+}
+
+#activities main #displaySelected #sendinfo input[type="email"]{
+    width:200px;
+}
+
+/*contact*/
+.phone,.email{
+    line-height: 2;
+}
+
+/*contact_form*/
+form{
+    margin-left: 60px;
+    margin-right:60px;
+    margin-top: -80px;
+}
+fieldset{
+    border-color: #9ed034;
+    border-width: 1;
+    padding-left: 30px;
+    margin-bottom: 100px;
+    padding-top: 30px;
+}
+
+legend{
+    font-weight: bold;
+    text-transform: uppercase;
+    color:#4977D1;
+}
+label{
+    font-weight: bold;
+    padding-top: 20px;
+}
+.textbox, .commentbox{
+    display:grid;
+}
+
+input[type="text"]{
+    width:50%;
+    margin-top: 5px;
+}
+
+input[type="email"],input[type="num"]{
+    display: block;
+    width:15%;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+.radios{
+    display:inline;
+    line-height: 3;
+}
+
+select{
+    width: 120px;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.selectmenu{
+    margin-top: 30px;
+}
+
+textarea{
+    width:80%;
+    height: 200px;
+}
+
+div.randomcode, div.button {
+    display: flex;
+    justify-content: flex-end; /* go to right */
+    width:81%;
+}
+
+input[type="submit"]{
+    display:block;
+    margin-left:630px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 120px;
+    height:40px;
+    /* background-color: #4977D1; */
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+    color:#fff;
+}
+
+.randomcode input {
+    width:20em;
+    margin-top: 30px;
+    margin-right:30px;
+    height:30px;
+}
+
+.randomcode [id="codes"]{
+    background-color: #c2c2c2;
+    height: 40px;
+    padding-top:20px;
+    text-align: center;
+    width: 7em;
+}
+
+/*cliffs*/
+#cliff_pics{
+    /* background-color: #3B5998; */
+    width: 60%;
+    margin-top: -50px;
+    margin-bottom: 80px;
+    margin-left: 350px;
+    gap: 20px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    /* justify-items: center; */
+}
+table{
+    border:none;
+    border-collapse:collapse;
+    width: 100%;
+    height: 210px;
+}
+
+td, th{
+    border:none;
+}
+
+
+#cliff_pics thead{
+    background-color: #852B1B;
+    color:#fff;
+    font-size: 15px;
+    height:30px;
+}
+
+td[class="wc"]{
+    background-image: url(images/cliff-west-sea.jpg);
+    background-size: 100%;
+}
+td[class="nc"]{
+    background-image: url(images/cliff-north-mountain.jpg);
+    background-size: 100%;
+}
+td[class="ec"]{
+    background-image: url(images/cliff-east-river.jpg);
+    background-size: 100%;
+}
+td[class="sc"]{
+    background-image: url(images/cliff-south-canyon.jpg);
+    background-size: 100%;
+}
+

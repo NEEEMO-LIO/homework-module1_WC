@@ -1,0 +1,401 @@
+/* Header */
+header {
+    width: 100%;
+    min-height: 400px;
+    padding-top: 3em;
+}
+#home header {
+    background:  no-repeat lightgrey url(images/cliff_ocean.jpg);
+    background-size: 1500px;
+}
+.main-header {
+    background-color:rgb(255, 255, 255, 0.8) ;
+    width: 700px;
+    margin: 2em auto 0 auto;
+    min-height: 100px;
+    height: 100px;
+}
+.main-header .logo img {
+    width: 100px;
+    height: 100px;
+    margin: 0 2em 0 0;
+    float: left;
+}
+
+/* Navigation */
+.main-menu {
+    margin-left: 227px;
+    font-weight: 400;
+}
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #888;
+}
+
+.main-menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    float: left;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-left: 1px solid rgba(202, 204, 202, 0.6);
+    line-height: 100px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.main-menu ul li a {
+    text-decoration: none;
+    color: #888;
+}
+.main-menu ul li a:hover {
+    color: #9ed034;
+}
+.main-menu ul li.active {
+    background: #9ed034;
+    border: none;
+}
+.main-menu ul li.active a {
+    color: #fff;
+}
+
+/* Main */
+main {
+    padding: 3em 6em 3em 5.5em;
+    margin: 2em 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+main h1 {
+    font-size: 2.5em;
+    padding-bottom: 0.5em;
+    color: #9ed034;
+}
+main h2 {
+    font-size: 1.7em;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.content-box {
+    width: 48%;
+    border: 1.5px solid #6c6969;
+    padding: 20px;
+    box-sizing: border-box;
+}
+main p {
+    line-height: 1.5;
+}
+
+
+/* Partners */
+section {
+    width: 100%;
+    background-color: #4288C3;
+}
+section .container {
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+section #partners {  
+    width: 100%;
+    padding: 2em 0 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+section #partners .partner {
+    display: inline-block;
+    margin: 0 0.75em;
+    padding: 1.3em 1.5em;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+section #partners .partner img {
+    width: 70px;
+    height: 70px;
+    display:block;
+    object-fit: cover; 
+    border-radius: 50%;
+}
+
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 155px;
+    padding-bottom: 1em 0;
+    background-color: #ecfab8;
+}
+footer .container {
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+footer #nondisclaimer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+footer #nondisclaimer .copy {
+    font-size: 0.9em;
+}
+footer #nondisclaimer .social {
+    text-align: right;
+}
+footer #disclaimer {
+    text-align: center;
+    border-top: 1px solid #888;
+    padding-top: 1em;
+}
+footer #disclaimer p {
+    margin: 0;
+    font-size: 0.85em;
+}
+footer #nondisclaimer .social .fa {
+    padding: 10px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 50%;
+}
+footer #nondisclaimer .social .fa:hover {
+    opacity: 0.7;
+}
+footer #nondisclaimer .social .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+    
+footer #nondisclaimer .social .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+footer #nondisclaimer .social .fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+/* Home */
+
+
+
+/* ACTIVATE BELOW WHEN TESTING NAVIGATION AND OTHERS FOR RWD */
+
+/* Media Queries */
+/* -SM */
+@media (max-width: 576px) {
+    main {
+        padding: 2em 0; /* 减少main的padding */
+    }
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .content-box {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+    
+    .content-box:last-child {
+        margin-bottom: 0;
+    }
+    section #partners {
+        flex-direction: column;
+        align-items: center;
+    }
+    section #partners .partner {
+        width: 70%; 
+        margin: 1em 0;
+    }
+    section #partners .partner img {
+        width: 100%;
+        height: auto;
+        max-width: 100px; 
+    }
+}
+
+
+
+
+
+/* SM */
+@media (min-width: 576px) {
+    main {
+        padding: 2em 0; /* 减少main的padding */
+    }
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .content-box {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+    
+    .content-box:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Medium */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .logo img {
+        position: relative;
+        bottom: 8px;
+    }
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 1.7em;
+        top: 1.7em;
+        z-index: 1001;
+    }
+    .main-menu {
+        display: none;
+        width: 200px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        right: 1.7em;
+        top: 5em;
+        z-index: 1000;
+    }
+    .main-menu.show {
+        display: block;
+        
+    }
+    .main-menu ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .main-menu ul li {
+        display: block;
+        border-bottom: 1px solid rgba(202, 204, 202, 0.6);
+        padding: 10px 20px;
+    }
+    main {
+        padding: 3em 1em;
+        margin: 0;
+    }
+    .content-wrapper {
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+    .content-box {
+        width: 48%; 
+        margin-bottom: 0;
+    }
+    section #partners {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 900px; 
+        margin: 0 auto;
+    }
+    section #partners .partner {
+        flex: 0 0 calc(33.333% - 2em); 
+        margin: 1em; /* 增加间距 */
+        max-width: calc(33.333% - 2em);
+    }
+}
+
+/* Large + */
+@media (min-width: 1024px) {
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .logo img {
+        position: relative;
+        bottom: 8px;
+    }
+    .main-menu {
+        display: block;
+        position: static;
+        width: auto;
+        background-color: transparent;
+    }
+    .main-menu ul {
+        flex-direction: row;
+    }
+    .main-menu ul li {
+        display: inline-block;
+        border-bottom: none;
+        border-left: 1px solid rgba(202, 204, 202, 0.6);
+        padding: 0 25px;
+    }
+    .menu-icon {
+        display: none;
+    }
+    main {
+        padding: 3em 1em;
+        margin: 0;
+    }
+    .content-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .content-box {
+        width: 48%;
+        margin-bottom: 0;
+    }
+    section #partners {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    section #partners .partner {
+        flex: 0 1 auto;
+        margin: 0 0.5em;
+    }
+    footer {
+        padding: 1em 0;
+    }
+    footer #nondisclaimer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+    footer #nondisclaimer .copy {
+        padding: 0;
+        text-align: left;
+        font-size: 0.9em;
+    }
+    footer #nondisclaimer .social {
+        padding: 0;
+        margin: 0;
+        text-align: right;
+    }
+    footer #disclaimer {
+        text-align: center;
+        border-top: 1px solid #888;
+        padding-top: 1em;
+    }
+    footer #disclaimer p {
+        margin: 0;
+        font-size: 0.85em;
+    }
+}
