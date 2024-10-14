@@ -14,6 +14,9 @@ header {
     margin: 2em auto 0 auto;
     min-height: 100px;
     height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 .main-header .logo img {
     width: 100px;
@@ -33,7 +36,17 @@ header {
     cursor: pointer;
     color: #888;
 }
-
+.navbar-toggler {
+    display: none;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    position: relative;
+    right: -300px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1001;
+  }
 .main-menu ul li {
     list-style-type: none;
     display: inline-block;
@@ -59,6 +72,7 @@ header {
 .main-menu ul li.active a {
     color: #fff;
 }
+
 
 /* Main */
 main {
@@ -239,6 +253,17 @@ footer #nondisclaimer .social .fa-instagram {
     main {
         padding: 2em 0; /* 减少main的padding */
     }
+    .main-header {
+        flex-wrap: wrap;
+        padding-right: 60px; 
+    }
+    .navbar-toggler {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
     .content-wrapper {
         flex-direction: column;
     }
@@ -269,6 +294,17 @@ footer #nondisclaimer .social .fa-instagram {
         top: 1.7em;
         z-index: 1001;
     }
+    .main-header {
+        flex-wrap: wrap;
+        padding-right: 60px; 
+    }
+    .navbar-toggler {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
     .main-menu {
         display: none;
         width: 200px;
@@ -292,17 +328,32 @@ footer #nondisclaimer .social .fa-instagram {
         border-bottom: 1px solid rgba(202, 204, 202, 0.6);
         padding: 10px 20px;
     }
+    
+    .dropdown-menu {
+        background-color: rgb(255, 255, 255);
+        border: none;
+      }
+      .dropdown-item {
+        color: #888;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+      .dropdown-item:hover {
+        color: #9ed034;
+        background-color: transparent;
+      }
+    }
     main {
         padding: 3em 1em;
         margin: 0;
     }
     .content-wrapper {
-        flex-direction: row; 
-        justify-content: space-between;
+        flex-direction: column;
     }
     .content-box {
-        width: 48%; 
-        margin-bottom: 0;
+        width: 100%;
+        margin-bottom: 20px;
     }
     section #partners {
         display: flex;
@@ -316,10 +367,15 @@ footer #nondisclaimer .social .fa-instagram {
         margin: 1em; /* 增加间距 */
         max-width: calc(33.333% - 2em);
     }
-}
+
 
 /* Large + */
 @media (min-width: 1024px) {
+    .main-header {
+        flex-wrap: wrap;
+        padding-right: 24px; 
+    }
+    
     .container {
         width: 100%;
         max-width: 1200px;
