@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Great Cliffs of California</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body id="contact" onLoad="disableButton(true)">
+
+
+    <header>
+        <div class="main-header">
+            
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" width="120">
+            </div>
+        
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="p4_cliffs.html">Cliffs</a></li>
+                    <li><a href="p2_activities.html">Activities</a></li>
+                    <li class="active"><a href="p3_contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Toggle menu">☰</button>
+        </div>
+</header>
+        <section id="timeofday">
+            <span>Your Current Local Time: </span>
+            <span id="clock"></span>
+        </section>
+    
+
+<main>
+    <div class="text">
+        <h2>Contacting Us</h2>
+        <p>You can drop by the visitors information center at the cliff site that you plan on visiting. They are open
+            7 days a week from 8.00AM to 5.00PM. You can also contact us directly if you need additional information about 
+            the Cliffs, Hours of Operations, Facilities or questions about this site using one of the following:
+        </p>
+
+        <div class="contactinfo">
+            <div class="phone">
+                <strong>Phone:</strong>
+                <span>(800)GCLIFFS</span>
+            </div>
+            <div class="email">
+                <strong>Email:</strong>
+                <span>info@greatcliffs.com</span>
+            </div>
+        </div>
+    </div>
+
+    
+    <form action="/contact" method="post">
+        <fieldset>
+            <legend>Contact Form</legend>
+            <div class="textbox">
+                <label>Name:</label>
+                    <input type="text" name="name" placeholder="John Doe">
+            </div>
+
+            <div class="radios">
+                <label> How should we contact you?</label>
+                <select id="contactMethod">
+                    <option value="">--Select--</option>
+                    <option value="1">Email</option>
+                    <option value="2">Phone</option>
+                </select>
+               
+                <div id="enterEm" style="display: none;">
+                    <label>Enter your email</label>
+                    <input type="email" name="email" placeholder="johndoe@gmail.com">
+                </div>
+                <div id="enterPh" style="display: none;">
+                    <label>Enter your phone</label>
+                    <input type="num" name="phone" placeholder="xxx-xxx-xxxx">
+                </div>
+            </div>
+
+           <div class="selectmenu">
+                <label>Which Cliff are you inquiring?</label>  
+                <select>
+                    <option>West Cliff</option>
+                    <option>North Cliff</option>
+                    <option>East Cliff</option>
+                    <option>South Cliff</option>
+                </select>
+            </div>
+    
+            <div class="commentbox">
+                <label>How did you hear about us:</label>  
+                <textarea></textarea>
+            </div>
+
+            <!--Random Codes-->
+            <div class="randomcode">
+                <input type="text" name="codeentered" id="codeentered" placeholder="Enter characters">
+                <span id="codes"></span>
+            </div>
+            
+            <div class="button">
+                <button type="submit" id="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> SEND
+                </button>
+            </div>
+        </fieldset>
+    </form>
+
+    <section>
+        <ul id="partners">
+            
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <div id="nondisclaimer">
+        <div class="copy">
+            &copy; Copyright 2024 :: GreatCliffs.com
+        </div>
+        <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </div>
+    </div>
+    <div id="disclaimer">
+        <p>This website is designed and created solely for educational purposes 
+        only at Westcliff University. All contents are not intended for any 
+        commercial gain or use.
+        </p>
+    </div>
+</footer>
+
+</div>
+
+    <!--Digital Clock Js-->
+    <script src="js/digclock.js"></script>
+
+    <!--Partners Js-->
+    <script src="js/site_scripts.js"></script>
+
+    <!--Verication Codes-->
+    <script src="js/randomcodes.js"></script>
+
+    <!--Dropdown Em/Ph-->
+    <script src="js/dropdown_EmPh.js"></script>
+
+    <!-- NAV Bootstrap JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const header = document.querySelector('.main-header');
+        const sticky = header.offsetTop;
+    
+        function handleStickyNav() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky-nav");
+                document.body.classList.add("has-sticky-nav");
+            } else {
+                header.classList.remove("sticky-nav");
+                document.body.classList.remove("has-sticky-nav");
+            }
+        }
+    
+        window.addEventListener('scroll', handleStickyNav);
+    
+        // hamburger
+        const hamburger = document.querySelector('.hamburger');
+        const mainMenu = document.querySelector('.main-menu');
+    
+        hamburger.addEventListener('click', function() {
+            mainMenu.classList.toggle('show');
+        });
+    
+        
+        const menuLinks = document.querySelectorAll('.main-menu a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mainMenu.classList.remove('show');
+            });
+        });
+    });
+        </script>
+
+   
+</body>
+
+
+
+
+</html>
